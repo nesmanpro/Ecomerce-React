@@ -2,7 +2,8 @@ import React from 'react'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import CartWidget from './CartWidget'
 import MiLogo from './MiLogo';
-import DropDown from './DropDown';
+import Nosotros from './Nosotros';
+import Productos from './Productos';
 
 
 
@@ -31,12 +32,10 @@ const NavBar = () =>  {
 
             <NavbarContent className="hidden sm:flex gap-4 " justify="center">
                 <NavbarItem>
-                    <Link className="text-white	" href="#">
-                        Nosotros
-                    </Link>
+                    <Nosotros />
                 </NavbarItem>
                 <NavbarItem className='font-bold'>
-                    <DropDown />
+                    <Productos />
                 </NavbarItem>
                 <NavbarItem>
                     <Link className="text-white	" href="#">

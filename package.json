@@ -1,7 +1,7 @@
 {
   "name": "miapp",
-  "homepage": "https://nesmanpro.github.io/PreEntrega1-Roque/",
-  "private": false,
+  "homepage": "https://nesmanpro.github.io/PreEntrega1-Roque",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

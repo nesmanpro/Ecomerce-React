@@ -1,7 +1,7 @@
 import React from "react";
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
 
-const DropDown = () => {
+const Productos = () => {
     return (
         <Dropdown>
             <DropdownTrigger>
@@ -20,4 +20,4 @@ const DropDown = () => {
     );
 }
 
-export default DropDown
+export default Productos
