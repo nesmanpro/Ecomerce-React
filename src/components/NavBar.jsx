@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import CartWidget from './CartWidget'
 import MiLogo from './MiLogo';
+import DropDown from './DropDown';
 
 
 
@@ -35,9 +36,7 @@ const NavBar = () =>  {
                     </Link>
                 </NavbarItem>
                 <NavbarItem className='font-bold'>
-                    <Link className="text-slate-400" href="#" aria-current="page">
-                        Productos
-                    </Link>
+                    <DropDown />
                 </NavbarItem>
                 <NavbarItem>
                     <Link className="text-white	" href="#">
