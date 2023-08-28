@@ -19,7 +19,7 @@ const NavBar = () =>  {
 
     return (
     
-        <Navbar onMenuOpenChange={setIsMenuOpen} className='bg-slate-900 h-24'>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className='bg-slate-900 h-24 '>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
