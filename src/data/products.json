@@ -2,7 +2,7 @@
         {
             "id": "ropa-01",
             "titulo": "Tshirt WHT Courage",
-            "foto": "./assets/img/ropa/01.webp",
+            "foto": "./img/ropa/01.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -12,7 +12,7 @@
         {
             "id": "ropa-02",
             "titulo": "Hoodie BLK Courage",
-            "foto": "./assets/img/ropa/02.webp",
+            "foto": "./img/ropa/02.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -22,7 +22,7 @@
         {
             "id": "ropa-03",
             "titulo": "Shoes Chrome",
-            "foto": "./assets/img/ropa/03.webp",
+            "foto": "./img/ropa/03.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -32,7 +32,7 @@
         {
             "id": "ropa-05",
             "titulo": "Tshirt WHT 02 Courage",
-            "foto": "./assets/img/ropa/05.webp",
+            "foto": "./img/ropa/05.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -42,7 +42,7 @@
         {
             "id": "ropa-06",
             "titulo": "Tshirt BLK Courage",
-            "foto": "./assets/img/ropa/06.webp",
+            "foto": "./img/ropa/06.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -52,7 +52,7 @@
         {
             "id": "complemento-01",
             "titulo": "5-Panel BLK01 Courage",
-            "foto": "./assets/img/complementos/01.webp",
+            "foto": "./img/complementos/01.webp",
             "categoria":{
                 "nombre":"Complementos",
                 "id":"complementos"
@@ -62,7 +62,7 @@
         {
             "id": "complemento-02",
             "titulo": "Hat BLK01 Courage",
-            "foto": "./assets/img/complementos/02.webp",
+            "foto": "./img/complementos/02.webp",
             "categoria":{
                 "nombre":"Complementos",
                 "id":"complementos"
@@ -72,7 +72,7 @@
         {
             "id": "complemento-03",
             "titulo": "Socks Topo",
-            "foto": "./src/assets/img/complementos/03.webp",
+            "foto": "./img/complementos/03.webp",
             "categoria":{
                 "nombre":"Complementos",
                 "id":"complementos"
@@ -82,7 +82,7 @@
         {
             "id": "complemento-04",
             "titulo": "5-Panel BLK02 Courage",
-            "foto": "./src/assets/img/complementos/04.webp",
+            "foto": "./img/complementos/04.webp",
             "categoria":{
                 "nombre":"Complementos",
                 "id":"complementos"
@@ -92,7 +92,7 @@
         {
             "id": "complemento-05",
             "titulo": "Cap Topo",
-            "foto": "./src/assets/img/complementos/05.webp",
+            "foto": "./img/complementos/05.webp",
             "categoria":{
                 "nombre":"Complementos",
                 "id":"complementos"
@@ -102,7 +102,7 @@
         {
             "id": "accesorios-01",
             "titulo": "Barrage Cargo YLW Chrome",
-            "foto": "./src/assets/img/accesorios/01.webp",
+            "foto": "./img/accesorios/01.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -112,7 +112,7 @@
         {
             "id": "accesorios-02",
             "titulo": "Pouch Chrome",
-            "foto": "./src/assets/img/accesorios/02.webp",
+            "foto": "./img/accesorios/02.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -122,7 +122,7 @@
         {
             "id": "accesorios-03",
             "titulo": "Handlebar bag Chrome",
-            "foto": "./src/assets/img/accesorios/03.webp",
+            "foto": "./img/accesorios/03.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -132,7 +132,7 @@
         {
             "id": "accesorios-04",
             "titulo": "Barrage Cargo BLK Chrome",
-            "foto": "./src/assets/img/accesorios/04.webp",
+            "foto": "./img/accesorios/04.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
