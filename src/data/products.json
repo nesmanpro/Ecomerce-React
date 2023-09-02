@@ -2,7 +2,7 @@
         {
             "id": "ropa-01",
             "titulo": "Tshirt WHT Courage",
-            "foto": "../assets/img/ropa/01.webp",
+            "foto": "../src/assets/img/ropa/01.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -12,7 +12,7 @@
         {
             "id": "ropa-02",
             "titulo": "Hoodie BLK Courage",
-            "foto": "../assets/img/ropa/02.webp",
+            "foto": "../src/assets/img/ropa/02.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
