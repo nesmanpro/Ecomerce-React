@@ -142,7 +142,7 @@
         {
             "id": "accesorios-05",
             "titulo": "Backpack 02 Chrome",
-            "foto": "./src/assets/img/accesorios/05.webp",
+            "foto": "./img/accesorios/05.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -152,7 +152,7 @@
         {
             "id": "accesorios-06",
             "titulo": "Frame Bag Chrome",
-            "foto": "./src/assets/img/accesorios/06.webp",
+            "foto": "./img/accesorios/06.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -162,7 +162,7 @@
         {
             "id": "accesorios-07",
             "titulo": "Courier Bag Chrome",
-            "foto": "./src/assets/img/accesorios/07.webp",
+            "foto": "./img/accesorios/07.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -172,7 +172,7 @@
         {
             "id": "accesorios-08",
             "titulo": "Backpack 01 Topo",
-            "foto": "./src/assets/img/accesorios/08.webp",
+            "foto": "./img/accesorios/08.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -182,7 +182,7 @@
         {
             "id": "accesorios-09",
             "titulo": "Accesories Bags Topo",
-            "foto": "./src/assets/img/accesorios/09.webp",
+            "foto": "./img/accesorios/09.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -192,7 +192,7 @@
         {
             "id": "accesorios-10",
             "titulo": "Camera Strap Topo",
-            "foto": "./src/assets/img/accesorios/10.webp",
+            "foto": "./img/accesorios/10.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -202,7 +202,7 @@
         {
             "id": "accesorios-11",
             "titulo": "Hand Bag Topo",
-            "foto": "./src/assets/img/accesorios/11.webp",
+            "foto": "./img/accesorios/11.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
@@ -212,7 +212,7 @@
         {
             "id": "accesorios-12",
             "titulo": "Handlebar Bag Topo",
-            "foto": "./src/assets/img/accesorios/12.webp",
+            "foto": "./img/accesorios/12.webp",
             "categoria":{
                 "nombre":"Accesorios",
                 "id":"accesorios"
