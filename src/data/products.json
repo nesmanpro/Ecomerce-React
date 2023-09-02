@@ -2,7 +2,7 @@
         {
             "id": "ropa-01",
             "titulo": "Tshirt WHT Courage",
-            "foto": "./src/assets/img/ropa/01.webp",
+            "foto": "../src/assets/img/ropa/01.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -12,7 +12,7 @@
         {
             "id": "ropa-02",
             "titulo": "Hoodie BLK Courage",
-            "foto": "./src/assets/img/ropa/02.webp",
+            "foto": "../src/assets/img/ropa/02.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
@@ -22,7 +22,7 @@
         {
             "id": "ropa-03",
             "titulo": "Shoes Chrome",
-            "foto": "./src/assets/img/ropa/03.webp",
+            "foto": "../src/assets/img/ropa/03.webp",
             "categoria":{
                 "nombre":"Ropa",
                 "id":"ropa"
