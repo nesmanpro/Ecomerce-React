@@ -12,9 +12,9 @@ const Productos = () => {
                 </a>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
-                <DropdownItem key="new">Branding</DropdownItem>
-                <DropdownItem key="copy">Photography</DropdownItem>
-                <DropdownItem key="edit">Video editing</DropdownItem>
+                <DropdownItem key="new">Ropa</DropdownItem>
+                <DropdownItem key="copy">Complementos</DropdownItem>
+                <DropdownItem key="edit">Accesorios</DropdownItem>
             </DropdownMenu>
         </Dropdown>
     );

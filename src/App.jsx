@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer'
 
 const App = () => {
 
-  const greetings = 'Bienvenidos a mi E-Commerce'
+  const greetings = 'Productos:'
 
   return (
     <>
