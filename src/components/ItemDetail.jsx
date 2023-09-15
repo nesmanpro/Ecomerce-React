@@ -5,7 +5,7 @@ const ItemDetail = ( {itemDetail} ) => {
 
     return (
         <>      
-            <Card key={itemDetail.id} className="max-h-lg">
+            <Card key={itemDetail.id} className="max-h-lg hover:shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.3)]">
                 <CardHeader className="pt-2 flex-col items-start">
                     <h4 className="font-bold text-xl text-slate-900">{itemDetail.titulo}</h4>
                     <p className="text-md font-bold text-slate-400">{itemDetail.categoria.toUpperCase()}</p>
@@ -14,8 +14,8 @@ const ItemDetail = ( {itemDetail} ) => {
                     <Image alt="Card background" className="object-center object-cover rounded-xl" src={itemDetail.foto} width={270}/>
                 </CardBody>
                 <CardFooter className="flex flex-col items-start gap-5 bg-slate-200">
-                    <p className="text-sm text-slate-800">{itemDetail.detalles}</p>
-                    <p className="text-background bg-danger rounded-full py-px px-2 my-2">€ {itemDetail.precio}</p>
+                    <p className="text-sm italic text-slate-800">{itemDetail.detalles}</p>
+                    <p className="text-slate-50 text-2xl bg-red-500 rounded-full py-px px-6 my-2">€ {itemDetail.precio}</p>
                     
                     <div className="flex content-center gap-2">
                         <Link to='/productos'>
