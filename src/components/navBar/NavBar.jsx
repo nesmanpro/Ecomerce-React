@@ -1,9 +1,9 @@
 import React from 'react'
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import CartWidget from './CartWidget'
 import MiLogo from './MiLogo';
-import NosotrosNav from './NosotrosNav';
-import ProductosNav from './ProductosNav';
+import ProdsNavBarBtn from './ProdsNavBarBtn';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,9 +12,11 @@ const NavBar = () =>  {
 
     const menuItems = [
         "Nosotros",
-        "Productos",
+        "Ropa",
+        "Accesorios",
+        "Complementos",
         "Contactos",
-        'Carrito',
+        
     ];
 
     return (
@@ -30,33 +32,37 @@ const NavBar = () =>  {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4 " justify="center">
+            <NavbarContent className="hidden sm:flex gap-4 text-slate-400 cursor-pointer" justify="center">
                 <NavbarItem>
-                    <NosotrosNav />
-                </NavbarItem>
-                <NavbarItem className='font-bold'>
-                    <ProductosNav />
+                <Link to="/nosotros">
+                        Nosotros
+                    </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className="text-white	" href="#">
+                        <ProdsNavBarBtn />
+                </NavbarItem>
+                <NavbarItem>
+                    <Link to="/productos">
                         Contactos
                     </Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className=" lg:flex text-white	">
-                    <CartWidget />
+                    <Link to='/carrito'>
+                        <CartWidget />
+                    </Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu>
+            <NavbarMenu className='mt-8'>
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
+                    <NavbarMenuItem key={`${item}-${index}`} >
                         <Link
                             color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "foreground" : "foreground"
-                            }
+                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                }
                             className="w-full"
-                            href="#"
+                            to={`/${item}`}
                             size="lg"
                         >
                             {item}

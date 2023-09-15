@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import PedirProductos from './PedirProductos';
+import GetProducts from './GetProducts';
 import ItemList from './ItemList';
 
 
-const ItemListContainer = ({ greetings }) => {
+const ItemListContainer = ({ title }) => {
     
     const [productos,  setProductos] = useState([]);
 
 
     useEffect(() => {
-        PedirProductos()
+        GetProducts()
         .then((res) => {
             setProductos(res)
         }) 
@@ -21,7 +21,7 @@ const ItemListContainer = ({ greetings }) => {
         <>
             <div className='flex-col justify-center p-8'>
                 <div className=' flex mb-8 justify-center'>
-                    <h1 className="text-2xl font-bold ">{greetings}</h1>
+                    <h1 className="text-2xl font-bold text-slate-700">{title}</h1>
                 </div>
 
                 <div className='grid grid-cols-5 gap-4'> 

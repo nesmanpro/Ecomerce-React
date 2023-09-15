@@ -6,20 +6,13 @@ const ItemList = ( {productos} ) => {
     return (
         <>
             {
-                productos.length > 0 &&
-                productos.map((producto) => {
+                productos.map((prod) => {
                     return (
 
-                        <Item 
-                            key={producto.id}
-                            id={producto.id}
-                            titulo={producto.titulo}
-                            precio={producto.precio}
-                            foto={producto.foto}
-                        />
+                        <Item producto={prod} key={prod.id}/>
                         )
                         })
-                    }
+                    } 
         </>
     )
 }
