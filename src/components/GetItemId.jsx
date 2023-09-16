@@ -5,7 +5,9 @@ const PedirDatosId = (id) => {
         const item = data.find((el) => el.id === id);
 
         if(item) {
-            resolve(item)
+            setTimeout(() => {
+                resolve(item)
+            }, 500)
         } else {
             reject({
                 error: 'No se encuentra el producto'
