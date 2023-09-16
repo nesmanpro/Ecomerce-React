@@ -13,7 +13,7 @@ Este es un proyecto de e-commerce desarrollado utilizando React, Vite, NextUI y 
 
 El proyecto tiene como objetivo crear una plataforma E-Commerce donde el usuario pueda explorar los productos por categorias, ver los detalles especificos del item seleccionado y agregar un producto al carrito (esto ultimo proximamente).
 
-![Texto alternativo de la imagen](public/img/Grabación-de-pantalla-2023-09-16-a-las-3.35.22.gif)
+![e-commerce](public/img/web.gif)
 
 ## Funcionalidades Clave
 
@@ -32,6 +32,8 @@ He implementado la navegación entre diferentes partes de la aplicación utiliza
 - Hacer clic en el logotipo de la marca navega de regreso a la página de inicio (`/`).
 - Hacer clic en un producto navega a la página de detalles de ese producto (`/item/:id`).
 - Hacer clic en una categoría en la barra de navegación filtra los productos y navega a la página de productos filtrados por categoría (`/productos/:categoria`).
+
+![Codigo](public/img/code.gif)
 
 ### Integración de Datos Asíncronos
 
