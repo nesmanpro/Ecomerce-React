@@ -7,15 +7,17 @@ import getItemId from './GetItemId'
 const ItemDetailContainer = () => {
     
     const [itemDetail,  setItemDetail] = useState(null);
-    const id = useParams().id;
+    const { id } = useParams();
     const categoria = useParams().categoria;
-    console.log(categoria)
 
     useEffect(() => {
         getItemId(id)
             .then((res) => {
                 setItemDetail(res)
-            }) 
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     }, [id])
 
     

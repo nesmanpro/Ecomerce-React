@@ -147,10 +147,7 @@
         "id": "accesorios-09",
         "titulo": "Accesories Bags Topo",
         "foto": "/img/accesorios/09.webp",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
+        "categoria": "accesorios",
         "precio": 50,
         "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
     }
