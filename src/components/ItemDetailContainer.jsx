@@ -7,7 +7,7 @@ import getItemId from './GetItemId'
 const ItemDetailContainer = () => {
     
     const [itemDetail,  setItemDetail] = useState(null);
-    const { id } = useParams();
+    const id = useParams().id;
     const categoria = useParams().categoria;
 
     useEffect(() => {
