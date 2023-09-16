@@ -12,10 +12,10 @@ const NavBar = () =>  {
 
     const menuItems = [
         "Nosotros",
+        "Productos",
         "Ropa",
         "Accesorios",
         "Complementos",
-        "Contactos",
         
     ];
 
@@ -39,13 +39,14 @@ const NavBar = () =>  {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                        <ProdsNavBarBtn />
-                </NavbarItem>
-                <NavbarItem>
                     <Link to="/productos">
-                        Contactos
+                        Productos
                     </Link>
                 </NavbarItem>
+                <NavbarItem>
+                        <ProdsNavBarBtn />
+                </NavbarItem>
+                
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className=" lg:flex text-white	">

@@ -9,7 +9,6 @@ import Carrito from './components/Carrito'
 
 const App = () => {
 
-  const title = 'Productos:'
 
   return (
     <>
@@ -21,7 +20,8 @@ const App = () => {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/nosotros' element={<Nosotros />} />
           <Route exact path='/carrito' element={<Carrito />} />
-          <Route exact path='/productos' element={<ItemListContainer title={title}/>} />
+          <Route exact path='/productos' element={<ItemListContainer />} />
+          <Route exact path='/productos/:categoria' element={<ItemListContainer/>} />
           <Route exact path='/item/:id' element={<ItemDetailContainer />} />
           
         </Routes>

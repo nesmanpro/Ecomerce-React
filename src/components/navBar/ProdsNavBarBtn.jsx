@@ -8,19 +8,31 @@ const ProdsNavBarBtn = () => {
     return (
         <Dropdown>
             <DropdownTrigger>
-                <Link to='/productos'> 
-                    Productos
-                </Link>
+                <a> 
+                    Categorias
+                </a>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions">    
-                <DropdownItem textValue="Ropa">
-                    Ropa
+            <DropdownMenu aria-label="Static Actions" >  
+                <DropdownItem textValue="Ropa" color="none" className="hover:bg-slate-200">
+                    <Link to='/productos/ropa'>
+                        <p>
+                            Ropa
+                        </p>
+                    </Link>
                 </DropdownItem>
-                <DropdownItem  textValue="Complementos">
-                    Complementos
+                <DropdownItem textValue="Complementos" color="none" className="hover:bg-slate-200">
+                    <Link to='/productos/complementos'>
+                        <p>
+                            Complementos
+                        </p>
+                    </Link>
                 </DropdownItem>
-                <DropdownItem  textValue="Accesorios">
-                    Accesorios
+                <DropdownItem  textValue="Accesorios" color="none" className="hover:bg-slate-200">
+                    <Link to='/productos/accesorios'>
+                    <p>
+                            Accesorios
+                        </p>
+                    </Link>
                 </DropdownItem>
             </DropdownMenu>
         </Dropdown>
