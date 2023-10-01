@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
-import getItemId from './GetItemId'
+import getItemId from '../../helpers/GetItemId'
 
 
 const ItemDetailContainer = () => {
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
     return (
         <>
             <div className='flex justify-center p-8'>
-                    {itemDetail && <ItemDetail itemDetail={itemDetail}/>}
+                    {itemDetail && <ItemDetail details={itemDetail}/>}
             </div>
         </>
     )

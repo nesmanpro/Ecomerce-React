@@ -1,6 +1,7 @@
 import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
+
 const Item = ( { producto } ) => {
     return (
         <>

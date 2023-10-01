@@ -1,14 +1,20 @@
 import React from 'react'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
-import CartWidget from './CartWidget'
+import CartWidget from '../carrito/CartWidget'
 import MiLogo from './MiLogo';
 import ProdsNavBarBtn from './ProdsNavBarBtn';
 import { Link } from 'react-router-dom';
+import { useState } from 'react'
+import HeadlessSlideOver from './HeadlessSlideOver'
+
 
 
 
 const NavBar = () =>  {
+
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const [open, setOpen] = useState(false);
 
     const menuItems = [
         "Nosotros",
@@ -16,7 +22,8 @@ const NavBar = () =>  {
         "Ropa",
         "Accesorios",
         "Complementos",
-        
+        "Contacto",
+    
     ];
 
     return (
@@ -46,13 +53,18 @@ const NavBar = () =>  {
                 <NavbarItem>
                         <ProdsNavBarBtn />
                 </NavbarItem>
+                <NavbarItem>
+                    <Link to="/contacto">
+                        Contacto
+                    </Link>
+                </NavbarItem>
                 
             </NavbarContent>
             <NavbarContent justify="end">
-                <NavbarItem className=" lg:flex text-white	">
-                    <Link to='/carrito'>
-                        <CartWidget />
-                    </Link>
+                <NavbarItem className=" lg:flex text-white	cursor-pointer">
+                        <div onClick={() => setOpen (true)}>
+                        <CartWidget/>
+                        </div>
                 </NavbarItem>
             </NavbarContent>
             <NavbarMenu className='mt-8'>
@@ -71,6 +83,11 @@ const NavBar = () =>  {
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
+            <HeadlessSlideOver 
+                open={open}
+                setOpen={setOpen}
+                title='Cart Details'
+            />
         </Navbar>
     );
 }

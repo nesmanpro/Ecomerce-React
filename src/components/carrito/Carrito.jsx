@@ -1,7 +1,5 @@
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
 
-const Nosotros = () => {
+const Carrito = () => {
   return (
     <div className="isolate bg-white px-6 py-24 lg:px-8">
             <div
@@ -16,16 +14,13 @@ const Nosotros = () => {
                 />
             </div>
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nosotros</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Carrito</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                    Ponte en contacto con nosotros a traves de este formulario.
+                    Aute magna irure deserunt veniam aliqua magna enim voluptate.
                 </p>
             </div>
-            
         </div>
-    
-    
   )
 }
 
-export default Nosotros
+export default Carrito

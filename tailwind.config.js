@@ -1,4 +1,5 @@
 const { nextui } = require("@nextui-org/react");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -44,8 +45,11 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [nextui({
-    addCommonColors: true,
-  })],
+  plugins: [
+    nextui({
+      addCommonColors: true,
+    }),
+    require('@tailwindcss/forms')
+  ],
 }
 

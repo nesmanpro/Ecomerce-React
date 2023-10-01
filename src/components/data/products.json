@@ -5,7 +5,8 @@
         "foto": "/img/ropa/01.webp",
         "categoria": "ropa",
         "precio": 30,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 10
     },
     {
         "id": "ropa-02",
@@ -13,7 +14,8 @@
         "foto": "/img/ropa/02.webp",
         "categoria": "ropa",
         "precio": 60,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 15
     },
     {
         "id": "ropa-03",
@@ -21,7 +23,8 @@
         "foto": "/img/ropa/03.webp",
         "categoria": "ropa",
         "precio": 80,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 24
     },
     {
         "id": "ropa-05",
@@ -29,7 +32,8 @@
         "foto": "/img/ropa/05.webp",
         "categoria": "ropa",
         "precio": 30,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 34
     },
     {
         "id": "ropa-06",
@@ -37,7 +41,8 @@
         "foto": "/img/ropa/06.webp",
         "categoria": "ropa",
         "precio": 40,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 7
     },
     {
         "id": "complemento-01",
@@ -45,7 +50,8 @@
         "foto": "/img/complementos/01.webp",
         "categoria": "complementos",
         "precio": 35,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 20
     },
     {
         "id": "complemento-02",
@@ -53,7 +59,8 @@
         "foto": "/img/complementos/02.webp",
         "categoria": "complementos",
         "precio": 40,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 17
     },
     {
         "id": "complemento-03",
@@ -61,7 +68,8 @@
         "foto": "/img/complementos/03.webp",
         "categoria": "complementos",
         "precio": 11,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 19
     },
     {
         "id": "complemento-04",
@@ -69,7 +77,8 @@
         "foto": "/img/complementos/04.webp",
         "categoria": "complementos",
         "precio": 35,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 13
     },
     {
         "id": "complemento-05",
@@ -77,7 +86,8 @@
         "foto": "/img/complementos/05.webp",
         "categoria": "complementos",
         "precio": 45,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 6
     },
     {
         "id": "accesorios-01",
@@ -85,7 +95,8 @@
         "foto": "/img/accesorios/01.webp",
         "categoria": "accesorios",
         "precio": 210,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 0
     },
     {
         "id": "accesorios-02",
@@ -93,7 +104,8 @@
         "foto": "/img/accesorios/02.webp",
         "categoria": "accesorios",
         "precio": 80,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 50
     },
     {
         "id": "accesorios-03",
@@ -101,7 +113,8 @@
         "foto": "/img/accesorios/03.webp",
         "categoria": "accesorios",
         "precio": 110,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 23
     },
     {
         "id": "accesorios-04",
@@ -109,7 +122,8 @@
         "foto": "/img/accesorios/04.webp",
         "categoria": "accesorios",
         "precio": 210,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 34
     },
     {
         "id": "accesorios-05",
@@ -117,7 +131,8 @@
         "foto": "/img/accesorios/05.webp",
         "categoria": "accesorios",
         "precio": 180,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 22
     },
     {
         "id": "accesorios-06",
@@ -125,7 +140,8 @@
         "foto": "/img/accesorios/06.webp",
         "categoria": "accesorios",
         "precio": 90,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 22
     },
     {
         "id": "accesorios-07",
@@ -133,7 +149,8 @@
         "foto": "/img/accesorios/07.webp",
         "categoria": "accesorios",
         "precio": 190,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 22
     },
     {
         "id": "accesorios-08",
@@ -141,7 +158,8 @@
         "foto": "/img/accesorios/08.webp",
         "categoria": "accesorios",
         "precio": 130,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 22
     },
     {
         "id": "accesorios-09",
@@ -149,6 +167,7 @@
         "foto": "/img/accesorios/09.webp",
         "categoria": "accesorios",
         "precio": 50,
-        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere."
+        "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
+        "stock": 22
     }
 ]

@@ -1,4 +1,4 @@
-import data from '../data/products.json';
+import data from '../components/data/products.json';
 
 const GetProducts = () => {
     return new Promise((resolve, reject) => {
