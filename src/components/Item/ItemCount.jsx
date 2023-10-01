@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import { useContext } from "react"
-import CartContext from "../../context/CartContext";
+import { CartContext } from "../../context/ShoppingCartContext";
 
 
 export const ItemCount = ( { details } ) => {

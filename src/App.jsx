@@ -6,19 +6,17 @@ import Home from './components/Home'
 import Nosotros from './components/Nosotros'
 import Contacto from './components/Contacto'
 import Carrito from './components/carrito/Carrito'
-import CartContext from './context/CartContext'
-import { useState } from 'react'
+import ShoppingCartContext from './context/ShoppingCartContext'
+
 
 const App = () => {
 
-  const [ cart, setCart ] = useState([]);
-  const [ cantidad, setCantidad ] = useState(1)
 
 
 
   return (
     <>
-      <CartContext.Provider value={ {cart, setCart, cantidad, setCantidad} }>
+      <ShoppingCartContext>
       <BrowserRouter>
 
         <NavBar />
@@ -35,7 +33,7 @@ const App = () => {
         </Routes>
 
       </BrowserRouter>
-      </CartContext.Provider>
+      </ShoppingCartContext>
     </>
   )
 }
