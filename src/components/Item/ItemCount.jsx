@@ -26,11 +26,12 @@ export const ItemCount = ( { details } ) => {
         const yaEstaEnCart = newCart .find((producto) => producto.id === itemAgregado.id);
         
         if(yaEstaEnCart){
-            yaEstaEnCart.cantidad += cantidad;
-            setCart(newCart)
+            yaEstaEnCart.cantidad += cantidad;       
         } else {
-            setCart([...cart, itemAgregado])
+            newCart.push(itemAgregado);
         }
+        setCart(newCart)
+        cantidad = 0
         
     }
 

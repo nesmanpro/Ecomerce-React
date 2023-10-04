@@ -24,8 +24,10 @@ const ItemDetail = ( {details} ) => {
                             <ItemCount details={details} />
     
                         
-                            <Button className="text-tiny self-end text-white bg-slate-500" radius="full" size="sm">
-                            <Link to='/productos'>Atras</Link>
+                            <Button className="text-tiny self-start text-white bg-slate-500" radius="full" size="sm">
+                                <Link to='/productos'>
+                                    Atras
+                                </Link>
                             </Button>                             
                         
                 </CardFooter>
