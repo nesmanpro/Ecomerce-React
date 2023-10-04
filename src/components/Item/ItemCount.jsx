@@ -31,7 +31,7 @@ export const ItemCount = ( { details } ) => {
             newCart.push(itemAgregado);
         }
         setCart(newCart)
-        cantidad = 0
+        
         
     }
 
