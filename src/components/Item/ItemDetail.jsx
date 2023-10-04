@@ -23,10 +23,11 @@ const ItemDetail = ( {details} ) => {
                         
                             <ItemCount details={details} />
     
-                        <Link to='/productos'>
-                            <Button className="text-tiny self-end text-white bg-slate-500" radius="full" size="sm">Atras
+                        
+                            <Button className="text-tiny self-end text-white bg-slate-500" radius="full" size="sm">
+                            <Link to='/productos'>Atras</Link>
                             </Button>                             
-                        </Link>
+                        
                 </CardFooter>
             </Card>            
         </>
