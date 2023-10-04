@@ -13,7 +13,6 @@ import HeadlessSlideOver from './HeadlessSlideOver'
 const NavBar = () =>  {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
     const [open, setOpen] = useState(false);
 
     const menuItems = [
@@ -71,12 +70,8 @@ const NavBar = () =>  {
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`} >
                         <Link
-                            color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                                }
                             className="w-full"
-                            to={`/${item}`}
-                            size="lg"
+                            to={`/productos/${item}`}
                         >
                             {item}
                         </Link>

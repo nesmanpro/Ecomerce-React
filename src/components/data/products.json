@@ -96,7 +96,7 @@
         "categoria": "accesorios",
         "precio": 210,
         "detalles": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu et nisl bibendum, vel suscipit arcu posuere.",
-        "stock": 0
+        "stock": 14
     },
     {
         "id": "accesorios-02",

@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Nosotros from './components/Nosotros'
 import Contacto from './components/Contacto'
 import Carrito from './components/carrito/Carrito'
+import CarritoPage from './components/carrito/CarritoPage'
 import ShoppingCartContext from './context/ShoppingCartContext'
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path='/nosotros' element={<Nosotros />} />
           <Route exact path='/contacto' element={<Contacto />} />
           <Route exact path='/carrito' element={<Carrito />} />
+          <Route exact path='/checkout' element={<CarritoPage />} />
           <Route exact path='/productos' element={<ItemListContainer />} />
           <Route exact path='/productos/:categoria' element={<ItemListContainer/>} />
           <Route exact path='/item/:id' element={<ItemDetailContainer />} />

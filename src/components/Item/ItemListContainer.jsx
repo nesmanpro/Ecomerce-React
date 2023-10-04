@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import GetProducts from '../../helpers/GetProducts';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { Capitalized } from '../../helpers/Capitalized'
-
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../firebase/data'
 
 
 const ItemListContainer = () => {
@@ -14,19 +14,19 @@ const ItemListContainer = () => {
 
 
     useEffect(() => {
-        GetProducts()
-        .then((res) => {
-            if(categoria){
-                setProductos( res.filter((product) => product.categoria === categoria) );
-                setTitulo(Capitalized(categoria));
-            } else {
-                setProductos(res);
-                setTitulo('Productos');
-            }
-        })
-        .catch((error) => {
-            console.log('error')
-        })
+        const prodData = collection(db, 'productos');
+
+        const que = categoria ? query(prodData, where('categoria', '==', categoria)) : prodData;
+
+
+        getDocs(que)
+            .then((res) => {
+                setProductos(
+                    res.docs.map((doc) => {
+                        return {...doc.data(), id: doc.id}
+                    })
+                )
+            })
     }, [categoria, titulo])
 
     

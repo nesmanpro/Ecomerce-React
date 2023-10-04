@@ -1,8 +1,10 @@
 import { useContext, useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
-import getItemId from '../../helpers/GetItemId'
 import { CartContext } from '../../context/ShoppingCartContext';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../firebase/data'
+
 
 const ItemDetailContainer = () => {
     
@@ -12,13 +14,14 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setCantidad(1);
-        getItemId(id)
+        const docData = doc(db, 'productos', id);
+        getDoc(docData)
             .then((res) => {
-                setItemDetail(res)
+                setItemDetail(
+                    {...res.data(), id: res.id}
+                    )
             })
-            .catch((error) => {
-                console.error(error);
-            });
+        
     }, [id])
 
     
