@@ -14,9 +14,11 @@ const Item = ( { producto } ) => {
                     className="object-center object-cover rounded-xl" src={producto.foto} width={270}/>
                 </CardBody>
                 <CardFooter className=" ">
-                    <Link to={`/item/${producto.id}`}>
-                        <Button className="text-tiny text-white bg-slate-500" radius="full" size="sm">Ver más</Button>
-                    </Link>
+                    
+                        <Button className="text-tiny text-white bg-slate-500" radius="full" size="sm">
+                            <Link to={`/item/${producto.id}`}>Ver más</Link>
+                        </Button>
+                    
                 </CardFooter>
             </Card>
         </>
