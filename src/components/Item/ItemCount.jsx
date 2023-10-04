@@ -4,12 +4,12 @@ import { CartContext } from "../../context/ShoppingCartContext";
 
 
 export const ItemCount = ( { details } ) => {
+    
+    
 
     const { cart, setCart, cantidad, setCantidad } = useContext(CartContext)
 
     
-
-
     const increment = () => {
         cantidad < details.stock  && setCantidad(cantidad + 1)
         
@@ -31,7 +31,6 @@ export const ItemCount = ( { details } ) => {
             newCart.push(itemAgregado);
         }
         setCart(newCart)
-        
         
     }
 
@@ -64,3 +63,4 @@ export const ItemCount = ( { details } ) => {
         </div>
     )
 }
+

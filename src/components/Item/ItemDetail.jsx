@@ -5,8 +5,8 @@ import { ItemCount } from "./ItemCount";
 
 const ItemDetail = ( {details} ) => {
 
-
     return (
+        
         <>      
             <Card key={details.id} className="max-h-lg hover:shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.3)]">
                 <CardHeader className="pt-2 flex-col items-start">
@@ -24,10 +24,8 @@ const ItemDetail = ( {details} ) => {
                             <ItemCount details={details} />
     
                         
-                            <Button className="text-tiny self-start text-white bg-slate-500" radius="full" size="sm">
-                                <Link to='/productos'>
+                            <Button as={Link} to='/productos' className="text-tiny self-start text-white bg-slate-500" radius="full" size="sm">
                                     Atras
-                                </Link>
                             </Button>                             
                         
                 </CardFooter>

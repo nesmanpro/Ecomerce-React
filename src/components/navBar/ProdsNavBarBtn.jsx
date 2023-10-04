@@ -13,26 +13,14 @@ const ProdsNavBarBtn = () => {
                 </a>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" >  
-                <DropdownItem textValue="Ropa" color="none" className="hover:bg-slate-200">
-                    <Link to='/productos/ropa'>
-                        <p>
-                            Ropa
-                        </p>
-                    </Link>
+                <DropdownItem as={Link} to='/productos/ropa'  color="none" className="hover:bg-slate-200">
+                            Ropa  
                 </DropdownItem>
-                <DropdownItem textValue="Complementos" color="none" className="hover:bg-slate-200">
-                    <Link to='/productos/complementos'>
-                        <p>
+                <DropdownItem as={Link} to='/productos/complementos'  color="none" className="hover:bg-slate-200">
                             Complementos
-                        </p>
-                    </Link>
                 </DropdownItem>
-                <DropdownItem  textValue="Accesorios" color="none" className="hover:bg-slate-200">
-                    <Link to='/productos/accesorios'>
-                    <p>
+                <DropdownItem as={Link} to='/productos/accesorios'  color="none" className="hover:bg-slate-200">
                             Accesorios
-                        </p>
-                    </Link>
                 </DropdownItem>
             </DropdownMenu>
         </Dropdown>

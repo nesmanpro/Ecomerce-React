@@ -1,15 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import getItemId from '../../helpers/GetItemId'
-
+import { CartContext } from '../../context/ShoppingCartContext';
 
 const ItemDetailContainer = () => {
     
+    const { setCantidad } = useContext(CartContext)
     const [itemDetail,  setItemDetail] = useState(null);
     const id = useParams().id;
 
     useEffect(() => {
+        setCantidad(1);
         getItemId(id)
             .then((res) => {
                 setItemDetail(res)

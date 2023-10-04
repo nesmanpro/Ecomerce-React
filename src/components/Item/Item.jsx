@@ -15,8 +15,8 @@ const Item = ( { producto } ) => {
                 </CardBody>
                 <CardFooter className=" ">
                     
-                        <Button className="text-tiny text-white bg-slate-500" radius="full" size="sm">
-                            <Link to={`/item/${producto.id}`}>Ver más</Link>
+                        <Button as={Link} to={`/item/${producto.id}`} className="text-tiny text-white bg-slate-500" radius="full" size="sm">
+                            Ver más
                         </Button>
                     
                 </CardFooter>

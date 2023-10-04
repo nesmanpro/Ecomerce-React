@@ -34,29 +34,29 @@ const NavBar = () =>  {
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden text-white font-bold"
                 />
-                <NavbarBrand>                    
+                <NavbarBrand >                    
                         <MiLogo/>                    
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4 text-slate-400 cursor-pointer" justify="center">
-                <NavbarItem>
-                <Link to="/nosotros">
+                <NavbarItem as={Link} to="/nosotros">
+                
                         Nosotros
-                    </Link>
+                    
                 </NavbarItem>
-                <NavbarItem>
-                    <Link to="/productos">
+                <NavbarItem as={Link} to="/productos">
+                    
                         Productos
-                    </Link>
+                    
                 </NavbarItem>
                 <NavbarItem>
                         <ProdsNavBarBtn />
                 </NavbarItem>
-                <NavbarItem>
-                    <Link to="/contacto">
+                <NavbarItem as={Link} to="/contacto">
+                    
                         Contacto
-                    </Link>
+                    
                 </NavbarItem>
                 
             </NavbarContent>
