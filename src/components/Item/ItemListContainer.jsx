@@ -19,6 +19,7 @@ const ItemListContainer = () => {
         const que = categoria ? query(prodData, where('categoria', '==', categoria)) : prodData;
 
 
+
         getDocs(que)
             .then((res) => {
                 setProductos(
@@ -28,13 +29,12 @@ const ItemListContainer = () => {
                 )
             })
 
-
         if (categoria) {
             setTitulo(Capitalized(categoria));
         } else {
-            setProductos(res);
             setTitulo('Productos');
         }
+
 
     }, [categoria, titulo])
 
