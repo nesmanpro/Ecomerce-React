@@ -6,7 +6,6 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../firebase/data'
-import { Modal } from '@nextui-org/react';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -16,10 +15,11 @@ const Checkout = () => {
 
 
     const [orderId, setOrderId] = useState('');
-    const { cart, precioTotal, eliminarProducto } = useContext(CartContext);
+    const { cart, precioTotal, eliminarProducto, deleteCartItem } = useContext(CartContext);
     const navigate = useNavigate()
 
-
+    
+    
 
     const { register, handleSubmit } = useForm();
     const comprar = (data) => {
@@ -134,7 +134,7 @@ const Checkout = () => {
                                         <small className=''>Subtotal</small>
                                         <p className='font-bold'>{prod.precio * prod.cantidad} €</p>
                                     </div>
-                                    <div className='mr-6'>
+                                    <div onClick={(e) => deleteCartItem(e, prod.id)} className='mr-6'>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -182,7 +182,7 @@ const Checkout = () => {
             <div className="bg-slate-100 mt-16 py-16 w-screen text-center shadow-md">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Finalizar el checkout</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                    Rellene los datos a continuacion para terminar con el proceso de compra de su pedido.
+                    Rellene los datos a continuacion para terminar con el proceso de compra de  su pedido.
                 </p>
             
             </div>

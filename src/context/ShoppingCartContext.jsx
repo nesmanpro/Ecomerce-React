@@ -2,6 +2,7 @@ import {useState, createContext, useEffect} from "react"
 
 export const CartContext = createContext(null)
 
+
 const startingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
 export const ShoppingCartProvider = ({ children }) => {
@@ -23,16 +24,31 @@ export const ShoppingCartProvider = ({ children }) => {
     }
 
     
-
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart))
 
     }, [cart])
     
-    
+    const deleteCartItem = (e, cart_id) => {
+        e.preventDefault();
+        const updatedCart = cart.map(item => {
+            if (item.id === cart_id) {
+
+                if (item.cantidad > 1) {
+                    return { ...item, cantidad: item.cantidad - 1 };
+                }
+
+                return null;
+
+            }
+            return item;
+        }).filter(Boolean);
+        setCart(updatedCart);
+    };
+
 
     return (
-        <CartContext.Provider value= { { cart, setCart, cantidad, setCantidad, cantidadCarrito, precioTotal, eliminarProducto} } >
+        <CartContext.Provider value= { { cart, setCart, cantidad, setCantidad, cantidadCarrito, precioTotal, eliminarProducto, deleteCartItem} } >
 
             {children}
 
