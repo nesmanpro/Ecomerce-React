@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Carrito = ({ setOpen }) => {
 
     const { cart, precioTotal, eliminarProducto, deleteCartItem } = useContext(CartContext);
+
     const navegar = useNavigate()
 
 

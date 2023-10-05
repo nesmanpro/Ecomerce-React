@@ -21,22 +21,21 @@ const ItemListContainer = () => {
 
         getDocs(que)
             .then((res) => {
-
                 setProductos(
                     res.docs.map((doc) => {
                         return { ...doc.data(), id: doc.id }
                     })
                 )
-                if (categoria) {
-                    setTitulo(Capitalized(categoria));
-                } else {
-                    setProductos(res);
-                    setTitulo('Productos');
-                }
             })
-            .catch((error) => {
-                console.log('error')
-            })
+
+
+        if (categoria) {
+            setTitulo(Capitalized(categoria));
+        } else {
+            setProductos(res);
+            setTitulo('Productos');
+        }
+
     }, [categoria, titulo])
 
 
