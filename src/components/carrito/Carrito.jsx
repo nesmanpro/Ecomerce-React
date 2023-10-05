@@ -7,7 +7,6 @@ const Carrito = ( { setOpen }) => {
 
     const { cart, precioTotal, eliminarProducto } = useContext(CartContext);
     const navegar = useNavigate()
-    
 
 
     return (
@@ -61,7 +60,7 @@ const Carrito = ( { setOpen }) => {
                                         <small className=''>Precio total</small>
                                         <p className='font-bold'>{prod.precio * prod.cantidad} €</p>
                                     </div>
-                                    <div className=''>
+                                    <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -85,16 +84,16 @@ const Carrito = ( { setOpen }) => {
                             </h1>
                         </div>
                         <div className='mb-7'>
-                            <small onClick={() => eliminarProducto()} className=' cursor-pointer py-3 px-4 bg-slate-500 text-slate-50 rounded-full'>Vaciar Carrito</small>
-                            <small onClick={() => setOpen(false)} className=' cursor-pointer ml-3 py-3 px-4 bg-slate-500 text-slate-50 rounded-full'>Seguir comprando</small>
+                            <small onClick={() => eliminarProducto()} className=' cursor-pointer py-3 px-4 bg-slate-500 text-slate-50 rounded-full'>Eliminar Todo</small>
+                            <small onClick={() => setOpen(false)} className=' cursor-pointer ml-3 py-3 px-4 bg-slate-500 text-slate-50 rounded-full'>Volver</small>
                         </div>
                             <button onClick={() => {
                                 navegar('/checkout');
                                 setOpen(false);
                                 } 
                             }
-                                className='cursor-pointer py-3 px-4 bg-slate-700 text-slate-50 rounded-full'>
-                                Ir a Check-out
+                                className='cursor-pointer py-3 px-4 bg-slate-700 font-bold text-slate-50 rounded-full'>
+                                Ir a Checkout
                             </button>
                     </>
 

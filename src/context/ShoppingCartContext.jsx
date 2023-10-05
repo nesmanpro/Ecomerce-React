@@ -22,10 +22,7 @@ export const ShoppingCartProvider = ({ children }) => {
         setCart([])
     }
 
-    // const eliminarDeAUno = () => {
-    //     cart.findIndex((prod) => prod.cantidad > 1 && prod.cantidad--)
-        
-    // }
+    
 
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart))

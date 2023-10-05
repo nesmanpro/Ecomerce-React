@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
-import { Capitalized } from '../../helpers/Capitalized'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../firebase/data'
 
@@ -46,16 +45,18 @@ const ItemListContainer = () => {
                 />
             </div>
                 <div>
-                    <div className='  mb-8 justify-center mx-auto max-w-2xl text-center'>
+                    <div className=' mb-8 justify-center mx-auto max-w-2xl text-center'>
                         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{titulo}</h1>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Aute magna irure deserunt veniam aliqua magna enim voluptate.
                 </p>
                     </div>
+                    <section className='flex justify-center'>
 
-                    <div className='grid grid-cols-5 gap-4'> 
-                        <ItemList productos={productos} titulo={titulo}/>
-                    </div>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl'> 
+                            <ItemList productos={productos} titulo={titulo}/>
+                        </div>
+                    </section>
                 </div>
             </div>
         </>
