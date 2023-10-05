@@ -3,6 +3,7 @@ import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../firebase/data'
+import Capitalized from '../../helpers/Capitalized'
 
 
 const ItemListContainer = () => {
@@ -27,7 +28,7 @@ const ItemListContainer = () => {
                     })
                 )
                 if (categoria) {
-                    setTitulo(categoria);
+                    setTitulo(Capitalized(categoria));
                 } else {
                     setProductos(res);
                     setTitulo('Productos');
