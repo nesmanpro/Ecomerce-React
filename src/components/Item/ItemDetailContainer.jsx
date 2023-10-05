@@ -6,10 +6,11 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase/data'
 
 
+
 const ItemDetailContainer = () => {
-    
+
     const { setCantidad } = useContext(CartContext)
-    const [itemDetail,  setItemDetail] = useState(null);
+    const [itemDetail, setItemDetail] = useState(null);
     const id = useParams().id;
 
     useEffect(() => {
@@ -18,18 +19,18 @@ const ItemDetailContainer = () => {
         getDoc(docData)
             .then((res) => {
                 setItemDetail(
-                    {...res.data(), id: res.id}
-                    )
+                    { ...res.data(), id: res.id }
+                )
             })
-        
+
     }, [id])
 
-    
+
 
     return (
         <>
             <div className='flex justify-center p-8'>
-                    {itemDetail && <ItemDetail details={itemDetail}/>}
+                {itemDetail && <ItemDetail details={itemDetail} />}
             </div>
         </>
     )

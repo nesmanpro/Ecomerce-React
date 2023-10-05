@@ -5,16 +5,16 @@ import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
-    }
+}
 
 export const Form = () => {
 
     const { register, handleSubmit } = useForm();
 
-    const send = (data)  => {
+    const send = (data) => {
         console.log(data)
     }
- 
+
     const [purchaseId, setPurchaseId] = useState('')
     const [agreed, setAgreed] = useState(false)
 
@@ -32,8 +32,8 @@ export const Form = () => {
                 />
             </div>
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contacto</h2>
-                <p className="mt-2 text-lg leading-8 text-gray-600">
+                <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Contacto</h2>
+                <p className="mt-4 text-xl text-gray-500">
                     Ponte en contacto con nosotros a traves de este formulario.
                 </p>
             </div>
@@ -72,7 +72,7 @@ export const Form = () => {
                             Email*
                         </label>
                         <div className="mt-2.5">
-                            <input required 
+                            <input required
                                 type="email"
                                 id="email"
                                 autoComplete="email"
