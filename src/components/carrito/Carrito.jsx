@@ -5,8 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Carrito = ({ setOpen }) => {
 
+    // Obteniendo datos del carrito y funciones relacionadas del contexto
     const { cart, precioTotal, eliminarProducto, deleteCartItem } = useContext(CartContext);
 
+    // Hook para navegar a otras páginas
     const navegar = useNavigate()
 
 
@@ -25,6 +27,9 @@ const Carrito = ({ setOpen }) => {
             </div>
             <div className="mx-auto max-w-2xl text-left">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Carrito</h2>
+
+                {/* Comprueba si hay productos en el carrito */}
+
                 {cart.length === 0
                     ? <p className='mt-1'>No hay productos en el carrito.</p>
                     : (
@@ -43,6 +48,9 @@ const Carrito = ({ setOpen }) => {
                             ? <h1 className=' text-slate-950 font-bold pb-3 text-xl'>Producto: </h1>
                             : <h1 className=' text-slate-950 font-bold pb-3 text-xl'>Productos: </h1>)
                     }
+
+                    {/* Mapea a través de los productos en el carrito */}
+
                     {cart.map((prod) => (
                         <div key={prod.id} className='mb-2 p-2 h-full w-full bg-slate-200 rounded-lg text-slate-950 flex-col justify-around gap-6'>
                             <div className='text-left'>

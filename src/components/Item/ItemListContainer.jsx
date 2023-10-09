@@ -15,21 +15,26 @@ const ItemListContainer = () => {
 
 
     useEffect(() => {
+
+        // Referencia a la colección de productos en la base de datos
         const prodData = collection(db, 'productos');
 
-        const que = categoria ? query(prodData, where('categoria', '==', categoria)) : prodData;
+        // Query para filtrar productos por categoría
+        const catProd = categoria ? query(prodData, where('categoria', '==', categoria)) : prodData;
 
 
-
-        getDocs(que)
-            .then((res) => {
+        // Obtener documentos de productos
+        getDocs(catProd)
+            .then((snapshot) => {
                 setProductos(
-                    res.docs.map((doc) => {
+                    snapshot.docs.map((doc) => {
                         return { ...doc.data(), id: doc.id }
                     })
                 )
             })
 
+
+        // Actualizar el título según la categoría
         if (categoria) {
             setTitulo(Capitalized(categoria));
         } else {

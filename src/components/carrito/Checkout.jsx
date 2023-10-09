@@ -9,7 +9,7 @@ import { db } from '../../firebase/data'
 
 
 
-
+// Función de utilidad para manejar las clases de estilo condicionales
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -18,12 +18,16 @@ const Checkout = () => {
 
 
     const [orderId, setOrderId] = useState('');
+    const [purchaseId, setPurchaseId] = useState('')
+    const [agreed, setAgreed] = useState(false)
+
+    // Contexto del carrito para acceder a los productos y funciones relacionadas con el carrito
     const { cart, precioTotal, eliminarProducto, deleteCartItem } = useContext(CartContext);
     const navigate = useNavigate()
 
 
 
-
+    // guarda data del formulatio y manda a base de datos
     const { register, handleSubmit } = useForm();
     const comprar = (data) => {
         const order = {
@@ -32,17 +36,19 @@ const Checkout = () => {
             total: precioTotal()
         }
 
+        // Añadir el pedido a la base de datos
         const prodData = collection(db, 'orders')
         addDoc(prodData, order)
             .then((docu) => {
+                // Actualizar el ID del pedido y eliminar productos del carrito después de la compra
                 setOrderId(docu.id)
                 eliminarProducto()
             })
     }
 
-    const [purchaseId, setPurchaseId] = useState('')
-    const [agreed, setAgreed] = useState(false)
 
+
+    // Renderizar este componente al finalizar la compra
 
     if (orderId) {
         return (
@@ -81,8 +87,10 @@ const Checkout = () => {
         <>
 
             {/* // Productos de carrito  */}
+
             <div className="isolate bg-white px-6 pt-24 lg:px-8">
 
+                {/* código para el fondo y otros estilos */}
                 <div
                     className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                     aria-hidden="true">
@@ -108,6 +116,8 @@ const Checkout = () => {
                     }
 
                     <div className='my-5 '>
+
+                        {/* ...Muestra los productos en el carrito */}
 
                         {cart.map((prod) => (
                             <div key={prod.id} className='mb-2 p-2 max-h-36 bg-slate-200 rounded-lg text-slate-950 flex-col overflow-hidden shadow-md'>
@@ -331,7 +341,7 @@ const Checkout = () => {
                                                                 <div className="mt-10">
                                                                     <button
                                                                         type="submit"
-                                                                        className="block w-full px-3.5 py-5 text-center text-md font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 cursor-pointer bg-slate-700 rounded-full font-bold"
+                                                                        className="block w-full px-3.5 py-5 text-center text-md text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 cursor-pointer bg-slate-700 rounded-full font-bold"
                                                                     >
                                                                         Checkout
                                                                     </button>

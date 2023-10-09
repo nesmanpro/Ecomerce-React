@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
+import ProdModal from './ProdModal'
+import { collection, addDoc } from 'firebase/firestore'
+import { db } from '../../firebase/data'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -9,14 +12,25 @@ function classNames(...classes) {
 
 export const Form = () => {
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const send = (data) => {
-        console.log(data)
+        const order = {
+            cliente: data,
+        }
+
+        const prodData = collection(db, 'contact')
+        addDoc(prodData, order)
+            .then((docu) => { })
+
+        setOpenModal(true);
+        reset();
     }
 
-    const [purchaseId, setPurchaseId] = useState('')
+    const [openModal, setOpenModal] = useState(false)
     const [agreed, setAgreed] = useState(false)
+
+
 
     return (
         <div className="isolate bg-white px-6 py-24 lg:px-8">
@@ -37,14 +51,15 @@ export const Form = () => {
                     Ponte en contacto con nosotros a traves de este formulario.
                 </p>
             </div>
-            <form onSubmit={handleSubmit(send)} className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form onSubmit={handleSubmit(send)}
+                className="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Nombre*
+                            Nombre
                         </label>
                         <div className="mt-2.5">
-                            <input required
+                            <input
                                 type="text"
                                 id="first-name"
                                 autoComplete="given-name"
@@ -95,7 +110,6 @@ export const Form = () => {
                                     className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                                     {...register('prefijo')}
                                 >
-                                    <option>-</option>
                                     <option>+34</option>
                                     <option>+54</option>
                                     <option>+31</option>
@@ -159,16 +173,21 @@ export const Form = () => {
                 </div>
                 <div className="mt-10">
                     <button
-                        type="submit"
+                        type='submit'
                         className="block w-full rounded-md bg-slate-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
                     >
                         Enviar
                     </button>
-                    {
-                        purchaseId === '' ? <p></p> : <p className='pt-10 text-lg leading-8 text-gray-600 mx-auto max-w-2xl text-center'>Tu formulario se ha enviado con el ID: {purchaseId} </p>
-                    }
+
                 </div>
             </form>
+            {
+                openModal &&
+                <div>
+                    <ProdModal closeModal={setOpenModal} />
+                </div>
+            }
+
         </div>
     )
 }

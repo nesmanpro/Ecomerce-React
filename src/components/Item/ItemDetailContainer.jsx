@@ -9,20 +9,25 @@ import { db } from '../../firebase/data'
 
 const ItemDetailContainer = () => {
 
+    // Obteniendo funciones y datos del contexto del carrito
     const { setCantidad } = useContext(CartContext)
     const [itemDetail, setItemDetail] = useState(null);
+
+    // Obteniendo el ID del producto de los parámetros de la URL
     const id = useParams().id;
 
 
     useEffect(() => {
         setCantidad(1);
 
-        // trae los productos de la base de datos
+        // Obteniendo el producto de la base de datos usando el ID
         const docData = doc(db, 'productos', id);
         getDoc(docData)
-            .then((res) => {
+            .then((snapshot) => {
+
+                // Actualizando el estado con los detalles del producto
                 setItemDetail(
-                    { ...res.data(), id: res.id }
+                    { ...snapshot.data(), id: snapshot.id }
                 )
             })
 
