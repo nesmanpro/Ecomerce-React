@@ -42,6 +42,8 @@ export const ItemCount = ({ details }) => {
             goTo('/productos');
         }, 2000);
     }
+
+    // 
     const goTo = useNavigate()
 
 

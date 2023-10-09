@@ -10,7 +10,7 @@ import HeadlessSlideOver from './HeadlessSlideOver'
 
 
 
-const NavBar = () =>  {
+const NavBar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [open, setOpen] = useState(false);
@@ -22,63 +22,72 @@ const NavBar = () =>  {
         "Accesorios",
         "Complementos",
         "Contacto",
-    
+
     ];
 
     return (
-    
+
         <Navbar onMenuOpenChange={setIsMenuOpen} className='bg-slate-900 h-24 '>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden text-white font-bold"
                 />
-                <NavbarBrand >                    
-                        <MiLogo/>                    
+                <NavbarBrand >
+                    <MiLogo />
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4 text-slate-400 cursor-pointer" justify="center">
                 <NavbarItem as={Link} to="/nosotros">
-                
-                        Nosotros
-                    
+
+                    Nosotros
+
                 </NavbarItem>
                 <NavbarItem as={Link} to="/productos">
-                    
-                        Productos
-                    
+
+                    Productos
+
                 </NavbarItem>
                 <NavbarItem>
-                        <ProdsNavBarBtn />
+                    <ProdsNavBarBtn />
                 </NavbarItem>
                 <NavbarItem as={Link} to="/contacto">
-                    
-                        Contacto
-                    
+
+                    Contacto
+
                 </NavbarItem>
-                
+
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className=" lg:flex text-white	cursor-pointer">
-                        <div onClick={() => setOpen (true)}>
-                        <CartWidget/>
-                        </div>
+                    <div onClick={() => setOpen(true)}>
+                        <CartWidget />
+                    </div>
                 </NavbarItem>
             </NavbarContent>
             <NavbarMenu className='mt-8'>
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`} >
-                        <Link
-                            className="w-full"
-                            to={`/productos/${item}`}
-                        >
-                            {item}
-                        </Link>
+                    <NavbarMenuItem key={`${item}`} >
+                        {
+                            item !== 'Productos'
+                                ? <Link
+                                    className="w-full"
+                                    to={`/productos/${item.toLowerCase()}`}
+                                >
+                                    {item}
+                                </Link>
+                                : <Link
+                                    className="w-full"
+                                    to='productos'
+                                >
+                                    {item}
+                                </Link>
+                        }
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
-            <HeadlessSlideOver 
+            <HeadlessSlideOver
                 open={open}
                 setOpen={setOpen}
                 title='Cart Details'

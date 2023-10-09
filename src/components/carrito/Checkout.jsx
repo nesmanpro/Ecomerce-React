@@ -176,7 +176,7 @@ const Checkout = () => {
 
             {!cart.length < 1 &&
                 <>
-                    <div className="isolate bg-white py-20">
+                    <div className="isolate bg-white py-20 overflow-hidden">
                         <div
                             className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                             aria-hidden="true">
@@ -189,10 +189,10 @@ const Checkout = () => {
                             />
                         </div>
 
-                        <div className="relative mx-auto max-w-3xl">
-                            <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
-                                <div className=" mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 flex-wrap">
-                                    <div className=" sm:max-w-xs ">
+                        <div className="mx-auto max-w-3xl">
+                            <div className="flex justify-center">
+                                <div className="sm:flex sm:items-center mx-auto max-w-3xl px-10 ">
+                                    <div className=" sm:max-w-xs">
                                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                                             Finalizar el checkout
                                         </h1>
@@ -204,14 +204,14 @@ const Checkout = () => {
                                         <div className="mt-10">
                                             <div
                                                 aria-hidden="true"
-                                                className=" lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+                                                className="lg:w-full lg:max-w-7xl"
                                             >
-                                                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                                                    <div className="flex items-center space-x-6 lg:space-x-8">
+                                                <div className="">
+                                                    <div className="flex items-center">
 
                                                         <div>
-                                                            <form onSubmit={handleSubmit(comprar)} className="mx-auto max-w-xl sm:mt-20 mb-28">
-                                                                <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+                                                            <form onSubmit={handleSubmit(comprar)} className="">
+                                                                <div className="grid grid-cols-1 gap-x-3 gap-y-3 sm:grid-cols-2">
                                                                     <div>
                                                                         <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
                                                                             Nombre*
