@@ -103,7 +103,7 @@ const Checkout = () => {
                     />
                 </div>
                 <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Carrito</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Resumen del carrito</h2>
                     {cart.length === 0
                         ? <p className='mt-4 text-xl text-gray-500'>No hay productos en el carrito.</p>
                         : (
@@ -238,7 +238,7 @@ const Checkout = () => {
                                                                     </div>
                                                                     <div>
                                                                         <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                                                                            Apellido
+                                                                            Apellido <span className='text-tiny font-normal text-slate-400'>(Opcional)</span>
                                                                         </label>
                                                                         <div className="mt-2.5">
                                                                             <input
@@ -298,10 +298,10 @@ const Checkout = () => {
                                                                     </div>
                                                                     <div className="sm:col-span-2">
                                                                         <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                                                                            Dirección <span className='text-tiny font-normal text-slate-400'>(Opcional)</span>
+                                                                            Dirección
                                                                         </label>
                                                                         <div className="mt-2.5">
-                                                                            <textarea
+                                                                            <textarea required
                                                                                 id="address"
                                                                                 rows={2}
                                                                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"

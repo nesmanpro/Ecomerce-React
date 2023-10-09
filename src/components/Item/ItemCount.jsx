@@ -50,8 +50,8 @@ export const ItemCount = ({ details }) => {
 
     //Toastify
     const notify = () => toast.success(`${details.titulo} agregado!`, {
-        position: "top-right",
-        autoClose: 2000,
+        position: "bottom-right",
+        autoClose: 9000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -63,8 +63,8 @@ export const ItemCount = ({ details }) => {
     return (
         <div className="flex items-center gap-4">
             <div className="flex items-center py-3 gap-5">
-                <div className="flex items-center">
-                    <button onClick={decrement} className="p-0.5 text-white bg-slate-500 rounded-full rounded-bl-full">
+                <div className="flex items-center bg-rose-600">
+                    <button onClick={decrement} className="p-0.5 text-white bg-slate-500  rounded-full rounded-bl-full">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />

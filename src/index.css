@@ -9,3 +9,7 @@
     border-radius: 1rem;
     color: black
 }
+
+.Toastify__progress-bar {
+    background-color: #ec4899;
+}
