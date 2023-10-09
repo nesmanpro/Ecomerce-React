@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import { CartContext } from '../../context/ShoppingCartContext'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
@@ -346,12 +346,6 @@ const Checkout = () => {
                                                 </div>
                                             </div>
 
-                                            <Link
-                                                to="/productos"
-                                                className="inline-block rounded-full border border-transparent bg-slate-400 px-8 py-3 text-center font-medium text-white hover:bg-slate-700"
-                                            >
-                                                Ver más productos
-                                            </Link>
                                         </div>
                                     </div>
                                 </div>

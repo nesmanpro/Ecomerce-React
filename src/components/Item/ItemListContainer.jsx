@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../firebase/data'
 import Capitalized from '../../helpers/Capitalized'
+import Spiner from '../../helpers/Spiner'
 
 
 const ItemListContainer = () => {
@@ -63,10 +64,15 @@ const ItemListContainer = () => {
                         </p>
                     </div>
                     <section className='flex justify-center'>
-
-                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl'>
-                            <ItemList productos={productos} titulo={titulo} />
-                        </div>
+                        {
+                            productos <= 0
+                                ? <div className='mt-24 md:mt-52'>
+                                    <Spiner />
+                                </div>
+                                : <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl'>
+                                    <ItemList productos={productos} titulo={titulo} />
+                                </div>
+                        }
                     </section>
                 </div>
             </div>
