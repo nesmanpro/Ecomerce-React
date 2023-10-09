@@ -13,8 +13,11 @@ const ItemDetailContainer = () => {
     const [itemDetail, setItemDetail] = useState(null);
     const id = useParams().id;
 
+
     useEffect(() => {
         setCantidad(1);
+
+        // trae los productos de la base de datos
         const docData = doc(db, 'productos', id);
         getDoc(docData)
             .then((res) => {

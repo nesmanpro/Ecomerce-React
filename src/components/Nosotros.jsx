@@ -1,4 +1,12 @@
 import { Link } from 'react-router-dom'
+import img1 from '../../public/img/accesorios/01.webp'
+import img2 from '../../public/img/accesorios/02.webp'
+import img3 from '../../public/img/complementos/01.webp'
+import img4 from '../../public/img/complementos/03.webp'
+import img5 from '../../public/img/complementos/05.webp'
+import img6 from '../../public/img/ropa/04.webp'
+import img7 from '../../public/img/ropa/05.webp'
+
 
 const Nosotros = () => {
     return (
@@ -39,37 +47,14 @@ const Nosotros = () => {
                                             <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                                 <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                                                     <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                                                        src={img1}
                                                         alt=""
                                                         className="h-full w-full object-cover object-center"
                                                     />
                                                 </div>
                                                 <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                     <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                                                        alt=""
-                                                        className="h-full w-full object-cover object-center"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                                                        alt=""
-                                                        className="h-full w-full object-cover object-center"
-                                                    />
-                                                </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                                                        alt=""
-                                                        className="h-full w-full object-cover object-center"
-                                                    />
-                                                </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                                                        src={img2}
                                                         alt=""
                                                         className="h-full w-full object-cover object-center"
                                                     />
@@ -78,14 +63,37 @@ const Nosotros = () => {
                                             <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                                 <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                     <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                                                        src={img3}
+                                                        alt=""
+                                                        className="h-full w-full object-cover object-bottom"
+                                                    />
+                                                </div>
+                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                    <img
+                                                        src={img4}
                                                         alt=""
                                                         className="h-full w-full object-cover object-center"
                                                     />
                                                 </div>
                                                 <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                     <img
-                                                        src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                                                        src={img5}
+                                                        alt=""
+                                                        className="h-full w-full object-cover object-center"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                    <img
+                                                        src={img6}
+                                                        alt=""
+                                                        className="h-full w-full object-cover object-center"
+                                                    />
+                                                </div>
+                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                    <img
+                                                        src={img7}
                                                         alt=""
                                                         className="h-full w-full object-cover object-center"
                                                     />
