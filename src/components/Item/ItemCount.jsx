@@ -63,7 +63,7 @@ export const ItemCount = ({ details }) => {
     return (
         <div className="flex items-center gap-4">
             <div className="flex items-center py-3 gap-5">
-                <div className="flex items-center bg-rose-600">
+                <div className="flex items-center">
                     <button onClick={decrement} className="p-0.5 text-white bg-slate-500  rounded-full rounded-bl-full">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
