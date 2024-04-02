@@ -1,8 +1,8 @@
-import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
 
-const Item = ( { producto } ) => {
+const Item = ({ producto }) => {
 
 
     return (
@@ -13,17 +13,17 @@ const Item = ( { producto } ) => {
                 </CardHeader>
                 <CardBody className="py-2">
                     <Image alt="Card background"
-                    className="object-center object-cover rounded-xl" src={producto.foto} width={270}/>
+                        className="object-center object-cover rounded-xl" src={producto.foto} width={270} />
                 </CardBody>
                 <CardFooter className="flex justify-between px-6">
-                    
-                        <Button as={Link} to={`/item/${producto.id}`} className="text-tiny text-white bg-slate-500" radius="full" size="sm">
-                            Ver más
-                        </Button>
-                        <p className='px-2 text-white rounded-full bg-red-400 mr-1'> {producto.precio} € </p>
-                    
+
+                    <Button as={Link} to={`/item/${producto.id}`} className="text-tiny text-white bg-slate-500" radius="full" size="sm">
+                        Ver más
+                    </Button>
+                    <p className='px-2 text-white rounded-full bg-red-400 mr-1'> {producto.precio} € </p>
                 </CardFooter>
             </Card>
+
         </>
     )
 }

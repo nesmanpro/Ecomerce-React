@@ -1,6 +1,6 @@
-## Proyecto final curso React.
+# Final Project React Course
 
-Este es un proyecto de e-commerce desarrollado utilizando React, Vite, NextUI y Tailwind CSS, en la que se han implementado modales de tailwind y tambien de toastify.
+This is an e-commerce project developed using React, Vite, NextUI, and Tailwind CSS. Tailwind modals and Toastify modals have been implemented as well.
 
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)]()
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)]()
@@ -9,67 +9,67 @@ Este es un proyecto de e-commerce desarrollado utilizando React, Vite, NextUI y 
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)]()
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)]()
 
-## Descripción del Proyecto
+## Project Description
 
-El proyecto tiene como objetivo crear una plataforma E-Commerce donde el usuario pueda explorar los productos por categorias, ver los detalles especificos del item seleccionado, elegir la cantidad de unidades de cada producto que mediante un boton podrá agregarlos al carrito.
+The project aims to create an E-Commerce platform where users can browse products by categories, view specific item details, and choose the quantity of each product to add them to the cart through a button.
 
 ![e-commerce](public/img/webPF.gif)
 
-### Carrito de Compras Interactivo
+### Interactive Shopping Cart
 
-Una de las características principales de este proyecto es el carrito de compras altamente interactivo. Al hacer clic en el icono del carrito, aparece un preview en una barra lateral. Desde aquí, los usuarios tienen un control completo sobre su compra:
+One of the main features of this project is the highly interactive shopping cart. Clicking on the cart icon reveals a preview in a sidebar. From here, users have full control over their purchase:
 
-##### Vista Previa del Carrito:
+##### Cart Preview:
 
-Los usuarios pueden ver una vista previa de los artículos en su carrito, incluyendo detalles como nombres, cantidades y precios.
+Users can see a preview of the items in their cart, including details like names, quantities, and prices.
 
-##### Eliminar y Vaciar el Carrito:
+##### Remove and Empty Cart:
 
-Los usuarios pueden eliminar artículos individualmente o vaciar todo el carrito con un solo clic, lo que brinda flexibilidad y comodidad.
+Users can remove items individually or empty the entire cart with a single click, providing flexibility and convenience.
 
-##### Continuar al Checkout:
+##### Proceed to Checkout:
 
-Si los usuarios están satisfechos con su selección, pueden proceder al checkout, donde encontrarán una versión más detallada de su compra. Aquí, se muestran imágenes de los productos y un formulario que, una vez completado, se guarda en la base de datos al finalizar la compra entregando un ID identificador de la compra.
+If users are satisfied with their selection, they can proceed to checkout, where they will find a more detailed version of their purchase. Here, product images are displayed along with a form that, once completed, is saved in the database upon completing the purchase, delivering a purchase ID.
 
-![Codigo](public/img/cart.gif)
+![Code](public/img/cart.gif)
 
-## Funcionalidades Clave
+## Key Features
 
-### Rutas
+### Routes
 
-- `/`: Navega a la página de inicio donde los usuarios pueden ver una lista de productos.
-- `/productos/:categoria`: Navega a la página de productos filtrados por categoría, donde `:id` es el identificador de la categoría.
-- `/item/:id`: Navega a la página de detalles del producto individual, donde `:id` es el identificador único del producto.
+- `/`: Navigate to the home page where users can see a list of products.
+- `/products/:category`: Navigate to the page of products filtered by category, where `:id` is the category identifier.
+- `/item/:id`: Navigate to the page of details of the individual product, where `:id` is the unique identifier of the product.
 
-### Navegación
+### Navigation
 
-He implementado la navegación entre diferentes partes de la aplicación utilizando React Router DOM:
+I have implemented navigation between different parts of the application using React Router DOM:
 
-- Hacer clic en el logotipo de la marca navega de regreso a la página de inicio (`/`).
-- Hacer clic en un producto navega a la página de detalles de ese producto (`/item/:id`).
-- Hacer clic en una categoría en la barra de navegación filtra los productos y navega a la página de productos filtrados por categoría (`/productos/:categoria`).
-- He implementado la navegación utilizando `useNavigate` de React Router DOM, lo que brinda una experiencia de usuario suave y sin problemas al cambiar entre diferentes partes de la aplicación.
+- Clicking on the brand logo navigates back to the home page (`/`).
+- Clicking on a product navigates to the details page of that product (`/item/:id`).
+- Clicking on a category in the navigation bar filters the products and navigates to the page of products filtered by category (`/products/:category`).
+- I have implemented navigation using `useNavigate` from React Router DOM, providing a smooth and seamless user experience when switching between different parts of the application.
 
-## Obteniendo Datos de la Base de Datos Firebase
+## Getting Data from Firebase Database
 
-En el archivo `ItemListContainer.jsx`, se obtienen los datos de la base de datos Firebase Firestore utilizando las funciones `collection`, `getDocs`, `query`, `where`.
+In the `ItemListContainer.jsx` file, data is fetched from the Firebase Firestore database using functions like `collection`, `getDocs`, `query`, `where`.
 
-En el archivo `ItemDetailContainer.jsx`, se utiliza el ID del producto proporcionado en los parámetros de la URL para obtener los detalles específicos de ese producto de la base de datos Firebase
+In the `ItemDetailContainer.jsx` file, the product ID provided in the URL parameters is used to fetch the specific details of that product from the Firebase database.
 
 ![e-commerce](public/img/contact.gif)
 
-## Tecnologias
+## Technologies
 
-### El proyecto hace uso de las siguientes tecnologías y herramientas:
+### The project makes use of the following technologies and tools:
 
-- **ReactJS**: Para el desarrollo de la interfaz de usuario interactiva y dinámica.
-- **Vite**: Como el entorno de desarrollo rápido para optimizar la experiencia de desarrollo.
-- **Firebase Firestore**: Para la base de datos en tiempo real que almacena y recupera los datos de los productos.
-- **React Router DOM**: Para la gestión de las rutas y la navegación dentro de la aplicación.
-- **TailwindCSS**: Uso de estilos y componentes de Tailwind.
-- **NextUI**: Uso de componentes NextUI.
-- **Toastify**: Uso de modales para notificar nuevos productos en el carrito.
+- **ReactJS**: For developing the interactive and dynamic user interface.
+- **Vite**: As the fast development environment to optimize the development experience.
+- **Firebase Firestore**: For the real-time database that stores and retrieves product data.
+- **React Router DOM**: For managing routes and navigation within the application.
+- **TailwindCSS**: Use of Tailwind styles and components.
+- **NextUI**: Use of NextUI components.
+- **Toastify**: Use of modals to notify new products in the cart.
 
-## Uso de Firebase Firestore
+## Usage of Firebase Firestore
 
-El proyecto utiliza Firebase Firestore para almacenar y recuperar datos. En los archivos `ItemListContainer.js` e `ItemDetailContainer.js`, se utilizan funciones de Firebase Firestore como `collection`, `getDocs`, `query`, `where`, `doc` y `getDoc` para interactuar con la base de datos y obtener los datos necesarios para mostrar en la aplicación.
+The project utilizes Firebase Firestore for storing and retrieving data. In the `ItemListContainer.js` and `ItemDetailContainer.js` files, Firebase Firestore functions like `collection`, `getDocs`, `query`, `where`, `doc`, and `getDoc` are used to interact with the database and fetch the necessary data to display in the application.
