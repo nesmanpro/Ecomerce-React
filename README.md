@@ -1,4 +1,4 @@
-# Final Project React Course
+# Ecomerce React JS & Tailwind CSS
 
 This is an e-commerce project developed using React, Vite, NextUI, and Tailwind CSS. Tailwind modals and Toastify modals have been implemented as well.
 
